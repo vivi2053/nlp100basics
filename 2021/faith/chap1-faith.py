@@ -12,7 +12,6 @@ print(list(word_gram))
 
 
 
-print('\n\n')
 def char_ngram(text,n):
     # text=text.replace(' ','')
     grams=[text[i:i+n] for i in range(len(text)-n+1)]
@@ -28,7 +27,7 @@ def word_ngram(text,n):
 print(word_ngram('I am an NLPer',2))
 
 
-def bigram_set():   #set {}, store multiple items, it is unordered, unindexed, no duplicates, unchangeable
+def bigram_set():  
     x=set(char_ngram('paraparaparadise',2))
     y=set(char_ngram('paragraph', 2))
 
